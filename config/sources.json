@@ -1,0 +1,405 @@
+{
+  "timeout_seconds": 30,
+  "request_pause_seconds": 0.2,
+  "detail_fetch_limit": 15,
+  "min_link_score": 2,
+  "min_item_score": 2,
+  "filters": {
+    "include_keywords": [
+      "call",
+      "calls",
+      "open call",
+      "calls for proposals",
+      "call for proposals",
+      "grant",
+      "grants",
+      "funding",
+      "tender",
+      "procurement",
+      "subvencija",
+      "subvencije",
+      "grantovi",
+      "bespovratna",
+      "javni poziv",
+      "konkurs",
+      "konkursi",
+      "poziv",
+      "pozivi",
+      "podrska",
+      "podrška"
+    ],
+    "sme_keywords": [
+      "sme",
+      "smes",
+      "small and medium",
+      "small business",
+      "startup",
+      "start-up",
+      "startups",
+      "scaleup",
+      "scale-up",
+      "enterprise europe network",
+      "msp",
+      "mala i srednja",
+      "mala preduzeca",
+      "mala preduzeća",
+      "preduzetnik",
+      "preduzetnici",
+      "privredna drustva",
+      "privredna društva",
+      "inovaciona preduzeca",
+      "inovaciona preduzeća"
+    ],
+    "serbia_keywords": [
+      "serbia",
+      "serbian",
+      "western balkans",
+      "widening countries",
+      "ipa",
+      "ipa iii",
+      "srbija",
+      "srbiji",
+      "srpske",
+      "zapadni balkan",
+      "zapadnog balkana"
+    ],
+    "exclude_keywords": [
+      "results",
+      "awarded",
+      "closed",
+      "archive",
+      "archived",
+      "rezultati",
+      "arhiva",
+      "zatvoren"
+    ]
+  },
+  "sources": [
+    {
+      "name": "EU Funding & Tenders Portal",
+      "level": "EU central",
+      "type": "web",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search",
+      "required_link_terms": ["topic", "call", "tender"],
+      "detail_fetch_limit": 5,
+      "fetch_details": true,
+      "enabled": true
+    },
+    {
+      "name": "European Innovation Council",
+      "level": "EU central",
+      "type": "web",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities_en",
+      "detail_fetch_limit": 12,
+      "enabled": true
+    },
+    {
+      "name": "European Innovation Council News",
+      "level": "EU central",
+      "type": "rss",
+      "url": "https://eic.ec.europa.eu/news_en/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "EU Delegation to Serbia",
+      "level": "EU in Serbia",
+      "type": "web",
+      "url": "https://www.eeas.europa.eu/delegations/serbia_en",
+      "detail_fetch_limit": 12,
+      "enabled": true
+    },
+    {
+      "name": "EU PRO Plus",
+      "level": "EU in Serbia",
+      "type": "web",
+      "url": "https://www.euproplus.org.rs/konkursi",
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Innovation Fund Serbia",
+      "level": "Serbia national",
+      "type": "web",
+      "url": "https://www.inovacionifond.rs/cir/konkursi/",
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Development Agency of Serbia",
+      "level": "Serbia national",
+      "type": "web",
+      "url": "https://ras.gov.rs/javni-pozivi-konkursi",
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Chamber of Commerce and Industry of Serbia",
+      "level": "Serbia national",
+      "type": "web",
+      "url": "https://pks.rs/strana/konkursi-i-javni-pozivi",
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Malta Enterprise Support Measures",
+      "level": "Malta national / SME support",
+      "type": "web",
+      "url": "https://maltaenterprise.com/support",
+      "required_link_terms": ["grant", "sme", "start-up", "research", "innovation", "application deadline"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "FONDI.eu Malta",
+      "level": "Malta EU funds",
+      "type": "web",
+      "url": "https://fondi.eu/",
+      "required_link_terms": ["business", "companies", "eu funds", "funding", "application"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Eureka Malta / Malta Enterprise",
+      "level": "EU co-funded / Malta-based SME",
+      "type": "web",
+      "url": "https://maltaenterprise.com/support/eureka-instruments-network-projects-eurostars-clusters",
+      "required_link_terms": ["eureka", "eurostars", "malta", "sme", "deadline"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Slovene Enterprise Fund",
+      "level": "Slovenia national / SME grants and finance",
+      "type": "web",
+      "url": "https://www.podjetniskisklad.si/en/tenders/",
+      "required_link_terms": ["grant", "sme", "startup", "guarantee", "voucher", "tender"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "SPIRIT Slovenia Tenders",
+      "level": "Slovenia national / business development",
+      "type": "web",
+      "url": "https://www.spiritslovenia.si/en/tenders",
+      "required_link_terms": ["tender", "public call", "companies", "sme", "internationalisation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "SID Bank Slovenia",
+      "level": "Slovenia development bank / finance route",
+      "type": "web",
+      "url": "https://www.sid.si/en",
+      "required_link_terms": ["sme", "financing", "export", "innovation", "green transition"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Slovenia EU Funds",
+      "level": "Slovenia EU funds monitoring",
+      "type": "web",
+      "url": "https://evropskasredstva.si/",
+      "required_link_terms": ["javni razpis", "podjetja", "sme", "digitalizacija", "investicije"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "F6S Open Programs",
+      "level": "EU cascade funding",
+      "type": "web",
+      "url": "https://www.f6s.com/programs",
+      "required_link_terms": ["open call", "horizon", "f6s", "sme", "grant"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Cascade Funding Hub",
+      "level": "EU cascade funding",
+      "type": "web",
+      "url": "https://cascadefunding.eu/open-calls/",
+      "required_link_terms": ["open calls", "calls for proposals", "sme", "startup"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "OpenCalls.fund",
+      "level": "EU cascade funding",
+      "type": "web",
+      "url": "https://opencalls.fund/",
+      "required_link_terms": ["active calls", "open call", "deadline"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Women TechEU",
+      "level": "EU / EIC deep-tech grant",
+      "type": "web",
+      "url": "https://womentecheurope.eu/active-calls/",
+      "required_link_terms": ["women techeu", "deep tech", "startup", "grant", "cut-off"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "28Digital Open Innovation Factory",
+      "level": "EU-backed startup programmes",
+      "type": "web",
+      "url": "https://28digital.eu/open-innovation-factory",
+      "required_link_terms": ["grant", "startup", "sme", "application", "funding"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "RIVCircular Cascade Funding",
+      "level": "EU cascade funding / circular economy",
+      "type": "web",
+      "url": "https://www.rivcircular.eu/call/",
+      "required_link_terms": ["cascade funding", "deadline", "consortium", "sme", "budget"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "NGI Open Calls",
+      "level": "EU cascade funding",
+      "type": "web",
+      "url": "https://www.ngi.eu/opencalls/",
+      "required_link_terms": ["ngi", "open call", "sme", "deadline"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Interreg / EU Cross-border Programmes",
+      "level": "Cross-border with Serbia",
+      "type": "web",
+      "url": "https://interreg.eu/",
+      "required_link_terms": ["serbia", "ipa", "call", "programme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Hungary-Serbia",
+      "level": "Cross-border with Serbia",
+      "type": "web",
+      "url": "https://hungary-serbia.eu/",
+      "required_link_terms": ["call for proposals", "serbia", "ipa", "cfp"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Romania-Serbia",
+      "level": "Cross-border with Serbia",
+      "type": "web",
+      "url": "https://romania-serbia.net/",
+      "required_link_terms": ["call for proposals", "serbia", "ipa"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Croatia-Serbia",
+      "level": "Cross-border with Serbia",
+      "type": "web",
+      "url": "https://interreg-croatia-serbia.eu/",
+      "required_link_terms": ["call", "serbia", "projects"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Danube Region",
+      "level": "Cross-border / transnational with Serbia",
+      "type": "web",
+      "url": "https://interreg-danube.eu/calls-for-proposals",
+      "required_link_terms": ["call for proposals", "danube", "application deadline"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "USAID Development Innovation Ventures",
+      "level": "USA state / global innovation grant",
+      "type": "web",
+      "url": "https://www.usaid.gov/div",
+      "required_link_terms": ["grant", "innovation", "stage", "apply", "evidence"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Grants.gov USAID Serbia Western Balkans",
+      "level": "USA state / Serbia monitoring",
+      "type": "web",
+      "url": "https://www.grants.gov/",
+      "required_link_terms": ["serbia", "western balkans", "usaid", "notice of funding opportunity"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "RVO DHI Netherlands",
+      "level": "Netherlands state / Dutch entity or partner",
+      "type": "web",
+      "url": "https://english.rvo.nl/subsidies-financing/dhi",
+      "required_link_terms": ["dhi", "demonstration", "feasibility", "investment preparation", "sme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "RVO Dutch Good Growth Fund",
+      "level": "Netherlands state / finance route",
+      "type": "web",
+      "url": "https://english.rvo.nl/subsidies-financing/dutch-good-growth-fund-dggf",
+      "required_link_terms": ["dggf", "sme", "export", "investment", "finance"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "RVO Starters International Business",
+      "level": "Netherlands state / Dutch SME support",
+      "type": "web",
+      "url": "https://english.rvo.nl/subsidies-financing/starters-international-business-sib",
+      "required_link_terms": ["sib", "international business", "voucher", "sme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Swiss SECO Start-up Fund",
+      "level": "Switzerland state / Swiss entity route",
+      "type": "web",
+      "url": "https://www.seco.admin.ch/seco/en/home/Promotion_Location_Promotion/Export_Promotion/Financing_aspects/Start-up_Fund.html",
+      "required_link_terms": ["start-up fund", "financing", "investment", "swiss"],
+      "detail_fetch_limit": 10,
+      "enabled": true
+    },
+    {
+      "name": "Innosuisse International Calls",
+      "level": "Switzerland state / Swiss SME partner",
+      "type": "web",
+      "url": "https://www.innosuisse.ch/inno/en/home/promotion-of-international-projects.html",
+      "required_link_terms": ["eurostars", "eureka", "international", "sme", "call"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Vinnova Calls",
+      "level": "Sweden state / Swedish SME partner",
+      "type": "web",
+      "url": "https://www.vinnova.se/en/calls-for-proposals/",
+      "required_link_terms": ["international", "eurostars", "sme", "call", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Sida Private Sector",
+      "level": "Sweden state / development and challenge funds",
+      "type": "web",
+      "url": "https://www.sida.se/en/for-partners/private-sector",
+      "required_link_terms": ["challenge fund", "private sector", "partnership", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Swedish Institute Funding",
+      "level": "Sweden state / cooperation grants",
+      "type": "web",
+      "url": "https://si.se/en/apply/funding-grants/",
+      "required_link_terms": ["funding", "grant", "call", "cooperation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    }
+  ]
+}
