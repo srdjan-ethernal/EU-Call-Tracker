@@ -29,6 +29,8 @@ http://localhost:5055
 
 Svaki poziv na web stranici ima `Apply` sekciju. Kada je otvoris, prikazuje se spisak dokumenata koje treba pripremiti: dokumenti firme, projektna dokumentacija, budzet/finansije i partneri/podnosenje.
 
+Glavni izvestaj ima link `Alert izvori`, koji otvara stranicu sa newsletterima, hubovima i portalima koje treba pratiti za EU, kaskadna, cross-border i nacionalna SME finansiranja za Srbiju, Maltu i Sloveniju.
+
 Brz tekstualni pregled:
 
 ```powershell
@@ -40,6 +42,7 @@ dotnet run --project .\src\EuCallTracker -- list --open-only --min-score 4
 - `config/sources.json` - lista izvora i reci za prepoznavanje relevantnosti
 - `data/calls.json` - lokalna baza nadjenih poziva
 - `reports/open-calls.html` - HTML izvestaj
+- `reports/alert-sources.html` - stranica sa newsletterima, hubovima i alert servisima
 - `reports/open-calls.csv` - CSV izvestaj za Excel
 - `src/EuCallTracker` - C# / ASP.NET Core aplikacija
 
