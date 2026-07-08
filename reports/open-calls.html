@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EU pozivi za MSP iz Srbije i Malte</title>
+  <title>EU pozivi za MSP iz Srbije, Malte i Slovenije</title>
   <style>
     :root {
       --bg: #f5f7f3;
@@ -34,6 +34,25 @@
       letter-spacing: 0;
     }
     header p { margin: 0; color: #d8e8e7; max-width: 880px; }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .nav-link {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: white;
+      background: rgba(255,255,255,.08);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .nav-link:hover { background: rgba(255,255,255,.15); }
     main {
       width: min(1180px, calc(100% - 32px));
       margin: 24px auto 56px;
@@ -173,13 +192,17 @@
 </head>
 <body>
   <header>
-    <h1>EU pozivi za MSP iz Srbije i Malte</h1>
+    <h1>EU pozivi za MSP iz Srbije, Malte i Slovenije</h1>
     <p>Pregled otvorenih i potencijalno relevantnih poziva, sa Apply checklistom za dokumente koje treba pripremiti.</p>
+    <nav class="header-actions" aria-label="Dodatne stranice">
+      <a class="nav-link" href="alert-sources.html">Alert izvori</a>
+      <a class="nav-link" href="open-calls.csv">CSV za Excel</a>
+    </nav>
   </header>
   <main>
     <section class="toolbar">
-      <strong>38 rezultata</strong>
-      <span>Izvestaj | Generisano: 2026-07-08 08:27</span>
+      <strong>44 rezultata</strong>
+      <span>Izvestaj | Generisano: 2026-07-08 14:52</span>
     </section>
     <article class="call">
   <div class="meta">
@@ -258,6 +281,46 @@
     </div>
     <div class="actions">
       <a class="external-apply" href="https://opencalls.fund/open-call/ligawine" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
+    <span>EU cascade funding / restricted support</span>
+    <span>NGI / NLnet</span>
+    <span>score 7</span>
+  </div>
+  <h2><a href="https://nlnet.nl/NGI0/review/" target="_blank" rel="noopener">NGI Zero Review - support for existing NGI grantees</a></h2>
+  <p>Restricted NGI support programme for quality and maturity of digital commons. It is only relevant if the project has already received a grant within the NGI initiative. Services cover security, privacy, accessibility, open-source licensing compliance, standardisation and sustainability of NGI-funded open-source projects.</p>
+  <dl>
+    <dt>Rok</dt><dd>2026-07-31</dd>
+    <dt>Status</dt><dd>restricted</dd>
+    <dt>Ruta</dt><dd>EU cascade funding</dd>
+    <dt>Kljucne reci</dt><dd>ngi, restricted, existing grantees only, open source, security, privacy, accessibility, quality review</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Obicno je kraci obrazac, ali rokovi su brzi. Prvo proveri eligibility drzave, SME status i portal za podnosenje.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li><li>Open-source repository or technical architecture outline</li><li>Licensing plan for code, documentation and results</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li><li>Small-grant budget in the requested EUR 5,000-50,000 style</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://nlnet.nl/NGI0/review/" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
     </div>
   </details>
 </article>
@@ -1143,6 +1206,46 @@
 </article>
 <article class="call">
   <div class="meta">
+    <span>EU-backed startup matching / continuous</span>
+    <span>28Digital / EIT Digital</span>
+    <span>score 14</span>
+  </div>
+  <h2><a href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">28Digital Open Innovation Factory Expression of Interest</a></h2>
+  <p>Year-round gateway for digital startups to access curated matches to EU funding calls, cascade funding schemes, corporate co-creation projects, market access, mentoring, investment opportunities and high-impact innovation services. Countries listed in the intake include Malta, Serbia and Slovenia.</p>
+  <dl>
+    <dt>Rok</dt><dd>nije pronadjen</dd>
+    <dt>Status</dt><dd>continuous</dd>
+    <dt>Ruta</dt><dd>Slovenia company</dd>
+    <dt>Kljucne reci</dt><dd>28digital, open innovation factory, expression of interest, eu funding, cascade funding, malta, serbia, slovenia, startup</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Najverovatnije aplicira slovenacka firma. Proveri da li sediste, zaposleni, troskovi i projekat moraju biti vezani za Sloveniju.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li><li>AJPES / Slovenian Business Register extract for the Slovenian company</li><li>Slovenian tax number and VAT evidence if applicable</li><li>Proof of Slovenian establishment, eligible activity and SME status</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li><li>Latest Slovenian annual accounts or interim financial statements</li><li>Evidence of own contribution or bank/development-bank finance if co-financing is required</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li><li>Slovenian national portal account or agency-specific submission account</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
     <span>Slovenia national / SME grants and finance</span>
     <span>Slovene Enterprise Fund</span>
     <span>score 14</span>
@@ -1298,6 +1401,46 @@
     </div>
     <div class="actions">
       <a class="external-apply" href="https://english.rvo.nl/subsidies-financing/dhi" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
+    <span>EU-backed cleantech support / continuous</span>
+    <span>28Digital / EIT Digital</span>
+    <span>score 12</span>
+  </div>
+  <h2><a href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">FINEX cleantech experimentation and regulatory support</a></h2>
+  <p>Continuous 28Digital-listed route for cleantech solutions, experimentation practices, networks and supporting regulatory frameworks. It is not shown as a fixed-deadline grant, but it can be useful for cleantech SMEs/startups seeking testbed, regulatory and fundraising support.</p>
+  <dl>
+    <dt>Rok</dt><dd>nije pronadjen</dd>
+    <dt>Status</dt><dd>continuous</dd>
+    <dt>Ruta</dt><dd>EU / national grant route</dd>
+    <dt>Kljucne reci</dt><dd>28digital, cleantech, finex, testbed, regulatory support, fundraising support, continuous, sme, startup</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Otvori zvanicni poziv i prvo potvrdi eligibility, rok, intenzitet finansiranja i obavezne anekse.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
     </div>
   </details>
 </article>
@@ -1503,6 +1646,46 @@
 </article>
 <article class="call">
   <div class="meta">
+    <span>EU-backed scaleup support / continuous</span>
+    <span>28Digital / EIT Digital</span>
+    <span>score 10</span>
+  </div>
+  <h2><a href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">Finest Scaleup - smart cities green and sustainable deep tech</a></h2>
+  <p>Continuous 28Digital-listed scaleup support route for smart cities, green and sustainable deep-tech solutions, especially linked to the Baltic Sea Region. Useful as a monitoring and partner route for startups seeking investment readiness, ecosystem access and international visibility.</p>
+  <dl>
+    <dt>Rok</dt><dd>nije pronadjen</dd>
+    <dt>Status</dt><dd>continuous</dd>
+    <dt>Ruta</dt><dd>Partner or monitoring route</dd>
+    <dt>Kljucne reci</dt><dd>28digital, finest scaleup, smart cities, green deep tech, fundraising support, continuous, scaleup</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Ovo je monitoring ruta, ne gotov poziv. Koristi checklistu za pripremu dok cekas konkretan notice ili cut-off.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://28digital.eu/open-innovation-factory" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
     <span>Switzerland state / Swiss entity route</span>
     <span>Swiss SECO</span>
     <span>score 10</span>
@@ -1578,6 +1761,86 @@
     </div>
     <div class="actions">
       <a class="external-apply" href="https://www.sida.se/en/for-partners/private-sector" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
+    <span>EU-backed health startup programme monitoring</span>
+    <span>EIT Health</span>
+    <span>score 9</span>
+  </div>
+  <h2><a href="https://eithealth.eu/programmes/catapult/" target="_blank" rel="noopener">EIT Health Catapult monitoring</a></h2>
+  <p>Monitoring route for the next EIT Health Catapult application phase. The 2026 page says the application phase is closed, but the programme remains relevant for life sciences, digital health and medtech startups. Past criteria include EU or Horizon Europe associated-country incorporation, micro/small enterprise status, private investment or revenue threshold, and looking for at least EUR 2M funding.</p>
+  <dl>
+    <dt>Rok</dt><dd>nije pronadjen</dd>
+    <dt>Status</dt><dd>monitoring</dd>
+    <dt>Ruta</dt><dd>Partner or monitoring route</dd>
+    <dt>Kljucne reci</dt><dd>eit health, catapult, digital health, medtech, life sciences, startup, monitoring</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Ovo je monitoring ruta, ne gotov poziv. Koristi checklistu za pripremu dok cekas konkretan notice ili cut-off.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://eithealth.eu/programmes/catapult/" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
+    </div>
+  </details>
+</article>
+<article class="call">
+  <div class="meta">
+    <span>EU-backed agrifood grant monitoring</span>
+    <span>EIT Food</span>
+    <span>score 9</span>
+  </div>
+  <h2><a href="https://www.eitfood.eu/open-calls" target="_blank" rel="noopener">EIT Food open calls monitoring</a></h2>
+  <p>Monitoring route for future EIT Food opportunities in agrifood, food system resilience, net-zero food systems, healthier lives through food, packaging, regenerative agriculture and startup-corporate proof-of-concept pilots. No future open deadline beyond the current date was confirmed in this pass, but it is a useful watchlist source for Malta, Slovenia and Serbia agrifood startups.</p>
+  <dl>
+    <dt>Rok</dt><dd>nije pronadjen</dd>
+    <dt>Status</dt><dd>monitoring</dd>
+    <dt>Ruta</dt><dd>Slovenia company</dd>
+    <dt>Kljucne reci</dt><dd>eit food, agrifood, food tech, startup, proof of concept, monitoring</dd>
+  </dl>
+  <details class="apply-panel">
+    <summary>Apply</summary>
+    <p class="route-note">Najverovatnije aplicira slovenacka firma. Proveri da li sediste, zaposleni, troskovi i projekat moraju biti vezani za Sloveniju.</p>
+    <div class="apply-grid">
+      <section class="doc-group">
+  <h3>1. Firma i eligibility</h3>
+  <ul><li>Company registration extract: APR for Serbia, MBR for Malta, or equivalent register</li><li>SME declaration: employees, turnover, balance sheet total, linked/partner enterprises</li><li>Ownership and UBO structure, with authorised representative details</li><li>Tax ID, VAT number if applicable, bank account confirmation</li><li>Short company profile and reference projects</li><li>AJPES / Slovenian Business Register extract for the Slovenian company</li><li>Slovenian tax number and VAT evidence if applicable</li><li>Proof of Slovenian establishment, eligible activity and SME status</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>2. Projekat</h3>
+  <ul><li>One-page project concept: problem, solution, target users, expected result</li><li>Work plan with work packages, milestones, deliverables and timeline</li><li>Market and impact section: customers, traction, benefits and KPIs</li><li>Team CVs for key people and role allocation</li><li>Risk table: technical, commercial, regulatory and delivery risks</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>3. Budzet i finansije</h3>
+  <ul><li>Detailed budget by partner and cost category</li><li>Supplier quotes or cost assumptions for equipment, services and subcontracting</li><li>Latest financial statements, management accounts or balance sheet</li><li>State-aid, de minimis and double-funding declarations where requested</li><li>Cash-flow plan for pre-financing and co-financing</li><li>Latest Slovenian annual accounts or interim financial statements</li><li>Evidence of own contribution or bank/development-bank finance if co-financing is required</li></ul>
+</section>
+      <section class="doc-group">
+  <h3>4. Partneri i podnosenje</h3>
+  <ul><li>Official call text and applicant guide saved locally</li><li>Eligibility checklist completed before writing the full proposal</li><li>Authorised signatory decision or power of attorney</li><li>Submission portal account: EU Login, F6S, national portal or programme portal</li><li>Final PDF/application package and proof of submission</li><li>Slovenian national portal account or agency-specific submission account</li></ul>
+</section>
+    </div>
+    <div class="actions">
+      <a class="external-apply" href="https://www.eitfood.eu/open-calls" target="_blank" rel="noopener">Otvori zvanicni poziv</a>
     </div>
   </details>
 </article>
