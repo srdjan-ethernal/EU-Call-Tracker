@@ -101,6 +101,42 @@
       "enabled": true
     },
     {
+      "name": "EISMEA Funding and SME News",
+      "level": "EU central / SME support",
+      "type": "web",
+      "url": "https://eismea.ec.europa.eu/index_en",
+      "required_link_terms": ["funding", "sme", "eic", "call", "grant"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Enterprise Europe Network",
+      "level": "EU SME support / partnering",
+      "type": "web",
+      "url": "https://een.ec.europa.eu/",
+      "required_link_terms": ["access to finance", "access to eu funding", "partnering", "sme", "webinar"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT Opportunities",
+      "level": "EU-backed innovation communities",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities",
+      "required_link_terms": ["startup", "sme", "open call", "grant", "accelerator"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "EuroAccess Funding Search",
+      "level": "EU funding search / Interreg",
+      "type": "web",
+      "url": "https://www.euro-access.eu/en",
+      "required_link_terms": ["sme", "serbia", "malta", "slovenia", "funding"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
       "name": "EU Delegation to Serbia",
       "level": "EU in Serbia",
       "type": "web",
@@ -249,6 +285,24 @@
       "enabled": true
     },
     {
+      "name": "EIT Health Catapult",
+      "level": "EU-backed health startup programme monitoring",
+      "type": "web",
+      "url": "https://eithealth.eu/programmes/catapult/",
+      "required_link_terms": ["startup", "healthtech", "medtech", "life sciences", "apply"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Food Open Calls",
+      "level": "EU-backed agrifood grant monitoring",
+      "type": "web",
+      "url": "https://www.eitfood.eu/open-calls",
+      "required_link_terms": ["startup", "grant", "open call", "proof-of-concept", "agrifood"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
       "name": "RIVCircular Cascade Funding",
       "level": "EU cascade funding / circular economy",
       "type": "web",
@@ -273,6 +327,24 @@
       "url": "https://interreg.eu/",
       "required_link_terms": ["serbia", "ipa", "call", "programme"],
       "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Italy-Slovenia",
+      "level": "Cross-border / Slovenia route",
+      "type": "web",
+      "url": "https://www.ita-slo.eu/en",
+      "required_link_terms": ["open calls", "call", "slovenia", "partner", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Central Europe",
+      "level": "Transnational / Slovenia route",
+      "type": "web",
+      "url": "https://www.interreg-central.eu/",
+      "required_link_terms": ["calls for proposals", "newsletter", "sme", "slovenia", "partner"],
+      "detail_fetch_limit": 20,
       "enabled": true
     },
     {
@@ -398,6 +470,15 @@
       "type": "web",
       "url": "https://si.se/en/apply/funding-grants/",
       "required_link_terms": ["funding", "grant", "call", "cooperation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "CORDIS EU Research and Innovation",
+      "level": "EU research intelligence",
+      "type": "web",
+      "url": "https://cordis.europa.eu/",
+      "required_link_terms": ["newsletter", "sme", "innovation", "funding", "horizon"],
       "detail_fetch_limit": 15,
       "enabled": true
     }
