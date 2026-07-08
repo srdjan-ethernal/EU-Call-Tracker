@@ -1,0 +1,9 @@
+Partner,Cost category,Description,Eligible cost EUR,Funding rate,Requested contribution EUR,Notes
+Lead SME,Personnel,Project management and technical development,,70%,,Map to work packages
+Lead SME,Personnel,AI/data engineering,,70%,,Map to work packages
+Lead SME,Travel and subsistence,Pilot meetings and validation visits,,70%,,Keep reasonable and justified
+Lead SME,Equipment depreciation,Equipment depreciation during project period only,,70%,,Do not include full purchase cost
+Lead SME,Other direct costs,Cloud, software, test materials, data preparation,,70%,,No subcontracting
+Lead SME,Indirect costs,25% of eligible personnel and purchase costs if applicable,,70%,,Check guide before finalising
+Partner 2,Personnel,If consortium partner is funded SME/startup,,70%,,Only if eligible and requesting funding
+Partner 2,Other direct costs,Partner implementation costs,,70%,,Only if eligible and justified
