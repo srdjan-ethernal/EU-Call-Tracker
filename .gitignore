@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+.agents/
+.codex/
+.gitdata/
+*.log
