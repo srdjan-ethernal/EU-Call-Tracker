@@ -84,12 +84,15 @@ static async Task WriteReportsAsync(CliOptions options)
 
     var htmlPath = Path.Combine(options.ReportPath, "open-calls.html");
     var csvPath = Path.Combine(options.ReportPath, "open-calls.csv");
+    var alertPath = Path.Combine(options.ReportPath, "alert-sources.html");
 
     await File.WriteAllTextAsync(htmlPath, ApplicationReportRenderer.RenderHtml(rows), Encoding.UTF8);
     await File.WriteAllTextAsync(csvPath, ApplicationReportRenderer.RenderCsv(rows), new UTF8Encoding(encoderShouldEmitUTF8Identifier: true));
+    await File.WriteAllTextAsync(alertPath, AlertSourcesPage.RenderHtml(), Encoding.UTF8);
 
     Console.WriteLine($"HTML report: {htmlPath}");
     Console.WriteLine($"CSV report:  {csvPath}");
+    Console.WriteLine($"Alert page:  {alertPath}");
 }
 
 static async Task PrintListAsync(CliOptions options)
@@ -128,6 +131,11 @@ static async Task ServeAsync(CliOptions options, string[] rawArgs)
     {
         var store = await CallStore.LoadAsync(options.DataPath);
         return Results.Json(store.Query(openOnly: false, minScore: 0));
+    });
+
+    app.MapGet("/alerts", () =>
+    {
+        return Results.Content(AlertSourcesPage.RenderHtml(liveMode: true), "text/html; charset=utf-8");
     });
 
     Console.WriteLine($"Serving {options.Url}");
@@ -908,7 +916,7 @@ static class ApplicationReportRenderer
 <head>
   <meta charset=""utf-8"">
   <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
-  <title>EU pozivi za MSP iz Srbije i Malte</title>
+  <title>EU pozivi za MSP iz Srbije, Malte i Slovenije</title>
   <style>
     :root {{
       --bg: #f5f7f3;
@@ -939,6 +947,25 @@ static class ApplicationReportRenderer
       letter-spacing: 0;
     }}
     header p {{ margin: 0; color: #d8e8e7; max-width: 880px; }}
+    .header-actions {{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }}
+    .nav-link {{
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: white;
+      background: rgba(255,255,255,.08);
+      font-weight: 700;
+      text-decoration: none;
+    }}
+    .nav-link:hover {{ background: rgba(255,255,255,.15); }}
     main {{
       width: min(1180px, calc(100% - 32px));
       margin: 24px auto 56px;
@@ -1078,8 +1105,12 @@ static class ApplicationReportRenderer
 </head>
 <body>
   <header>
-    <h1>EU pozivi za MSP iz Srbije i Malte</h1>
+    <h1>EU pozivi za MSP iz Srbije, Malte i Slovenije</h1>
     <p>Pregled otvorenih i potencijalno relevantnih poziva, sa Apply checklistom za dokumente koje treba pripremiti.</p>
+    <nav class=""header-actions"" aria-label=""Dodatne stranice"">
+      <a class=""nav-link"" href=""alert-sources.html"">Alert izvori</a>
+      <a class=""nav-link"" href=""open-calls.csv"">CSV za Excel</a>
+    </nav>
   </header>
   <main>
     <section class=""toolbar"">
@@ -1138,6 +1169,388 @@ static class ApplicationReportRenderer
   <h3>{Html(title)}</h3>
   <ul>{listItems}</ul>
 </section>";
+    }
+
+    private static string Html(string value)
+    {
+        return HtmlEncoder.Default.Encode(value ?? "");
+    }
+}
+
+sealed record AlertSource(
+    string Name,
+    string Category,
+    string Countries,
+    string Frequency,
+    string Setup,
+    string Notes,
+    string Url,
+    int Priority);
+
+static class AlertSourcesPage
+{
+    private static readonly AlertSource[] Sources =
+    {
+        new(
+            "Cascade Funding Hub by Sploro",
+            "EU cascade funding / FSTP",
+            "Serbia, Malta, Slovenia, EU partners",
+            "Weekly plus monthly analysis",
+            "Subscribe to alerts and news. Track open calls, July/monthly analysis, events and Matcher.",
+            "Best first radar for AID4SME-style calls, smaller equity-free grants and fast SME open calls.",
+            "https://cascadefunding.eu/",
+            1),
+        new(
+            "FundingBox / OnePass",
+            "Cascade funding, tech access, startup programmes",
+            "Serbia, Malta, Slovenia, EU-wide",
+            "Newsletter and platform updates",
+            "Create account, subscribe to newsletter and save relevant funding opportunities.",
+            "Strong for EU project-run calls, digital innovation, communities and partner programmes.",
+            "https://fundingbox.com/",
+            1),
+        new(
+            "F6S",
+            "Application portal and startup funding hub",
+            "Serbia, Malta, Slovenia, global startup routes",
+            "Account notifications per followed programme",
+            "Create complete company/founder profiles for all entities. Follow F6Sinnovation and relevant calls.",
+            "Mandatory or common portal for many EU cascade calls, including AID4SME.",
+            "https://www.f6s.com/",
+            1),
+        new(
+            "EU Funding & Tenders Portal",
+            "Official EU grants and tenders",
+            "Serbia where associated/eligible, Malta, Slovenia",
+            "Saved searches and portal notifications",
+            "Use EU Login. Save searches for SME, AI, data, cybersecurity, circular, health, energy and EIC.",
+            "Primary source for Horizon Europe, EIC, Digital Europe, Single Market Programme and tenders.",
+            "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+            1),
+        new(
+            "EIC and EISMEA",
+            "EIC, SME support and innovation ecosystems",
+            "Malta, Slovenia, Serbia where eligible",
+            "News, events and calls",
+            "Follow EIC funding pages, EISMEA news and events. Watch Accelerator, Transition, Pathfinder and STEP.",
+            "Important for deep tech, scale-up, dual-use, corporate pilots and EIC business acceleration.",
+            "https://eismea.ec.europa.eu/index_en",
+            1),
+        new(
+            "Enterprise Europe Network",
+            "SME support, partnering and access to finance",
+            "Serbia, Malta, Slovenia",
+            "Local contact points and news",
+            "Contact local EEN offices for all three countries. Ask for EU funding, partner search and access-to-finance alerts.",
+            "Useful because human advisors can surface calls that portals miss and help with partners.",
+            "https://een.ec.europa.eu/",
+            1),
+        new(
+            "OpenCalls.fund",
+            "EU project open calls",
+            "EU-wide, depends on each call",
+            "Newsletter",
+            "Subscribe to newsletter and monitor Active/Upcoming calls.",
+            "Good for agrifood, bioeconomy, water, rural and circular-economy calls.",
+            "https://opencalls.fund/",
+            2),
+        new(
+            "EIT Opportunities",
+            "EIT communities, accelerators and SME programmes",
+            "Malta, Slovenia, Serbia where programme allows",
+            "Current opportunities page plus newsletters",
+            "Track EIT Digital, Food, Health, Manufacturing, RawMaterials and Urban Mobility.",
+            "Good source for startup programmes, pilots, grants, venture building and sector accelerators.",
+            "https://www.eit.europa.eu/our-activities/opportunities",
+            2),
+        new(
+            "28Digital Open Innovation Factory",
+            "Digital startup matching, EU pilots and cascade funding",
+            "Serbia, Malta, Slovenia listed in EOI country selector",
+            "Continuous EOI",
+            "Submit expression of interest for startup profiles and keep it updated.",
+            "Low-effort intake that may route the company to pilots, grants, corporates or investment paths.",
+            "https://28digital.eu/open-innovation-factory",
+            2),
+        new(
+            "NGI Open Calls",
+            "Next Generation Internet and open-source grants",
+            "Usually EU / Horizon Europe eligible countries",
+            "Open calls page",
+            "Monitor open calls and project-specific eligibility. Use if solution has open-source, privacy or internet infrastructure angle.",
+            "Good for smaller grants and technical proposals, but eligibility varies by sub-call.",
+            "https://www.ngi.eu/opencalls/",
+            2),
+        new(
+            "EuroAccess",
+            "EU funding search and newsletter",
+            "Serbia, Malta, Slovenia and many cooperation regions",
+            "Newsletter after registration",
+            "Register, select SME/private company, countries and themes, then save calls in funding basket.",
+            "Very useful for Interreg, cohesion and territorial cooperation searches across countries.",
+            "https://www.euro-access.eu/en",
+            2),
+        new(
+            "Interreg Italy-Slovenia",
+            "Cross-border cooperation",
+            "Slovenia company and Italy-Slovenia partners",
+            "Newsletter and calls page",
+            "Subscribe and monitor Open Calls, small-scale projects and partner search.",
+            "Relevant because the Slovenia company can be a direct route into EU territorial cooperation.",
+            "https://www.ita-slo.eu/en",
+            2),
+        new(
+            "Interreg Central Europe",
+            "Transnational cooperation",
+            "Slovenia plus Central Europe partners",
+            "Newsletter subscription",
+            "Subscribe to newsletter and monitor call timeline.",
+            "Best for consortium projects with public/research/cluster partners; SMEs often join as partners.",
+            "https://www.interreg-central.eu/",
+            2),
+        new(
+            "Malta Enterprise",
+            "Malta national SME and innovation support",
+            "Malta company",
+            "News, events and support measures",
+            "Monitor support measures, EU Affairs, R&D, startup finance, Innovate and Eurostars pages.",
+            "Key source for the Malta company route and national co-financing/support schemes.",
+            "https://maltaenterprise.com/",
+            2),
+        new(
+            "Innovation Fund Serbia",
+            "Serbia national innovation grants",
+            "Serbia company",
+            "News and programme pages",
+            "Monitor Mini Grants, Matching Grants, Smart Start, Katapult, Catalytic and innovation vouchers.",
+            "Main Serbian innovation grant radar.",
+            "https://www.inovacionifond.rs/",
+            2),
+        new(
+            "Development Agency of Serbia",
+            "Serbia SME, export and supplier-chain support",
+            "Serbia company",
+            "Public calls and news",
+            "Monitor public calls, SME support, export promotion and supplier-chain programmes.",
+            "Good for practical SME support, export, trade fairs and supplier development.",
+            "https://www.ras.gov.rs/",
+            3),
+        new(
+            "SPIRIT Slovenia",
+            "Slovenia tenders, export and competitiveness",
+            "Slovenia company",
+            "Tenders and news",
+            "Monitor public tenders, entrepreneurship, internationalisation and competitiveness calls.",
+            "Important national radar for the Slovenia entity.",
+            "https://www.spiritslovenia.si/",
+            3),
+        new(
+            "Slovene Enterprise Fund",
+            "Slovenia SME grants, vouchers and finance",
+            "Slovenia company",
+            "Tenders page",
+            "Monitor startup incentives, vouchers, guarantees, loans and SME development finance.",
+            "High value for Slovenian SME route when new calls open.",
+            "https://www.podjetniskisklad.si/",
+            3),
+        new(
+            "CORDIS / Horizon Magazine",
+            "EU R&I news and project intelligence",
+            "EU-wide",
+            "Newsletter and editorial updates",
+            "Subscribe for research and innovation topics close to the product domain.",
+            "Not mainly a grant-alert service, but useful for finding trends, funded projects and partner targets.",
+            "https://cordis.europa.eu/",
+            3)
+    };
+
+    public static string RenderHtml(bool liveMode = false)
+    {
+        var generated = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+        var priorityOne = Sources.Count(x => x.Priority == 1);
+        var cards = string.Join(Environment.NewLine, Sources
+            .OrderBy(x => x.Priority)
+            .ThenBy(x => x.Name)
+            .Select(RenderCard));
+
+        return $@"<!doctype html>
+<html lang=""sr"">
+<head>
+  <meta charset=""utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+  <title>Alert izvori za EU SME pozive</title>
+  <style>
+    :root {{
+      --bg: #f5f7f3;
+      --text: #1d2728;
+      --muted: #65716b;
+      --line: #d8ded4;
+      --brand: #0b6f6a;
+      --header: #103c43;
+      --card: #ffffff;
+      --soft: #fbfcf8;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+    }}
+    header {{
+      background: var(--header);
+      color: white;
+      padding: 32px clamp(16px, 5vw, 56px);
+    }}
+    header h1 {{
+      margin: 0 0 8px;
+      font-size: clamp(26px, 5vw, 44px);
+      letter-spacing: 0;
+    }}
+    header p {{ margin: 0; color: #d8e8e7; max-width: 920px; }}
+    .header-actions {{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }}
+    .nav-link {{
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: white;
+      background: rgba(255,255,255,.08);
+      font-weight: 700;
+      text-decoration: none;
+    }}
+    main {{
+      width: min(1180px, calc(100% - 32px));
+      margin: 24px auto 56px;
+      display: grid;
+      gap: 14px;
+    }}
+    .toolbar {{
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }}
+    .setup {{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }}
+    .setup h2, .source h2 {{
+      font-size: 20px;
+      line-height: 1.25;
+      margin: 0 0 8px;
+      letter-spacing: 0;
+    }}
+    .setup ol {{
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }}
+    .source {{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }}
+    .meta {{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }}
+    .meta span {{
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 9px;
+      color: var(--muted);
+      font-size: 13px;
+      background: var(--soft);
+    }}
+    p {{ margin: 0 0 14px; color: #384243; }}
+    dl {{
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 6px 12px;
+      margin: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }}
+    dt {{ color: var(--muted); }}
+    dd {{ margin: 0; }}
+    a {{ color: var(--brand); text-decoration-thickness: 1px; }}
+    .external {{
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-top: 14px;
+      background: white;
+      color: var(--brand);
+      font-weight: 700;
+    }}
+    @media (max-width: 760px) {{
+      dl {{ grid-template-columns: 1fr; }}
+    }}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alert izvori za EU SME pozive</h1>
+    <p>Newsletteri, hubovi i portali koje treba ukljuciti da bismo hvatali EU, kaskadna, cross-border i nacionalna finansiranja za firme u Srbiji, Malti i Sloveniji.</p>
+    <nav class=""header-actions"" aria-label=""Navigacija"">
+      <a class=""nav-link"" href=""open-calls.html"">Nazad na pozive</a>
+    </nav>
+  </header>
+  <main>
+    <section class=""toolbar"">
+      <strong>{Sources.Length} alert izvora | {priorityOne} prioritet #1</strong>
+      <span>{(liveMode ? "Lokalni web pregled" : "Izvestaj")} | Generisano: {Html(generated)}</span>
+    </section>
+    <section class=""setup"">
+      <h2>Minimalni setup</h2>
+      <p>Ovo je prakticni redosled da se ne propusta dobar poziv.</p>
+      <ol>
+        <li>Jedan Outlook folder: EU Grants Radar, sa pravilima za newslettere i portale.</li>
+        <li>EU Login, F6S, FundingBox/OnePass i Cascade Funding nalog odmah.</li>
+        <li>Saved searches: AI, data, cybersecurity, digital health, circular economy, energy, SME, startup, Serbia, Malta, Slovenia.</li>
+        <li>Jednom nedeljno: otvoriti prioritet #1 izvore i uneti nove pozive u tracker.</li>
+        <li>Jednom mesecno: proveriti Interreg, EIT, Malta Enterprise, Serbia Innovation Fund i Slovenian sources.</li>
+      </ol>
+    </section>
+    {cards}
+  </main>
+</body>
+</html>";
+    }
+
+    private static string RenderCard(AlertSource source)
+    {
+        return $@"<article class=""source"">
+  <div class=""meta"">
+    <span>Prioritet {source.Priority}</span>
+    <span>{Html(source.Category)}</span>
+    <span>{Html(source.Countries)}</span>
+  </div>
+  <h2><a href=""{Html(source.Url)}"" target=""_blank"" rel=""noopener"">{Html(source.Name)}</a></h2>
+  <p>{Html(source.Notes)}</p>
+  <dl>
+    <dt>Update ritam</dt><dd>{Html(source.Frequency)}</dd>
+    <dt>Sta podesiti</dt><dd>{Html(source.Setup)}</dd>
+  </dl>
+  <a class=""external"" href=""{Html(source.Url)}"" target=""_blank"" rel=""noopener"">Otvori izvor</a>
+</article>";
     }
 
     private static string Html(string value)
