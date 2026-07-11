@@ -6,3 +6,4 @@ obj/
 .codex/
 .gitdata/
 *.log
+.local-keys/

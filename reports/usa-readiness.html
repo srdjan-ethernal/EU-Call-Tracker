@@ -1,0 +1,324 @@
+﻿<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>USA readiness za grantove i federalne programe</title>
+  <style>
+    :root {
+      --bg: #f5f7f3;
+      --text: #1d2728;
+      --muted: #65716b;
+      --line: #d8ded4;
+      --brand: #0b6f6a;
+      --header: #103c43;
+      --card: #ffffff;
+      --soft: #fbfcf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+    }
+    header {
+      background: var(--header);
+      color: white;
+      padding: 32px clamp(16px, 5vw, 56px);
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(26px, 5vw, 44px);
+      letter-spacing: 0;
+    }
+    header p { margin: 0; color: #d8e8e7; max-width: 920px; }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .nav-link {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: white;
+      background: rgba(255,255,255,.08);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 24px auto 56px;
+      display: grid;
+      gap: 14px;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+    .panel, .route {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .panel h2, .route h2 {
+      font-size: 20px;
+      line-height: 1.25;
+      margin: 0 0 8px;
+      letter-spacing: 0;
+    }
+    .panel ol, .panel ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .meta span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 9px;
+      color: var(--muted);
+      font-size: 13px;
+      background: var(--soft);
+    }
+    p { margin: 0 0 14px; color: #384243; }
+    dl {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 6px 12px;
+      margin: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+    a { color: var(--brand); text-decoration-thickness: 1px; }
+    .external {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-top: 14px;
+      background: white;
+      color: var(--brand);
+      font-weight: 700;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      dl { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>USA readiness za grantove i federalne programe</h1>
+    <p>Prakticna mapa za US firmu koju planiramo da otvorimo: koje rute pratiti, sta traze i sta spremiti pre prvog SBIR/STTR ili defense/health/energy pitch-a.</p>
+    <nav class="header-actions" aria-label="Navigacija">
+      <a class="nav-link" href="open-calls.html">Nazad na pozive</a>
+      <a class="nav-link" href="alert-sources.html">Alert izvori</a>
+    </nav>
+  </header>
+  <main>
+    <section class="toolbar">
+      <strong>11 USA ruta</strong>
+      <span>Izvestaj | Generisano: 2026-07-11 13:43</span>
+    </section>
+    <section class="panel">
+      <h2>Prvo srediti</h2>
+      <ol>
+        <li>Odabrati strukturu: US C-Corp ili LLC, uz proveru SBIR ownership/control pravila.</li>
+        <li>Pripremiti SAM.gov, UEI, EIN, banku, accounting i IP assignment chain.</li>
+        <li>Mapirati tehnologiju na 3 agencije: NSF za broad deep-tech, NIH za health, DOE/NASA/DoD za sector-specific R&D.</li>
+        <li>Napraviti jedan federalni capability deck: problem, novelty, TRL, customer, dual-use, team, budget, milestones.</li>
+        <li>Pre svake aplikacije proveriti foreign ownership, export control, data/security i US work location zahteve.</li>
+      </ol>
+    </section>
+    <section class="grid">
+      <section class="panel">
+        <h2>SBIR/STTR dokumenti</h2>
+        <ul>
+          <li>Company registration, EIN, UEI/SAM.gov status and ownership cap table</li>
+          <li>Principal investigator eligibility and employment status</li>
+          <li>Technical abstract, specific aims and work plan</li>
+          <li>Commercialization plan, market validation and letters of support</li>
+          <li>Budget, indirect cost assumptions and consultant/subaward quotes</li>
+        </ul>
+      </section>
+      <section class="panel">
+        <h2>Najbolji redosled</h2>
+        <ol>
+          <li>NSF Project Pitch za broad deep-tech.</li>
+          <li>NIH ako je digital health / medtech / biotech.</li>
+          <li>DOE ako je energy, climate, materials or manufacturing.</li>
+          <li>DIU/AFWERX ako ima dual-use customer fit.</li>
+          <li>Challenge.gov i Grants.gov kao radar, ne kao glavni sales funnel.</li>
+        </ol>
+      </section>
+    </section>
+    <article class="route">
+  <div class="meta">
+    <span>Prioritet 1</span>
+    <span>Defense customer / procurement route</span>
+  </div>
+  <h2><a href="https://www.diu.mil/solutions/portfolio" target="_blank" rel="noopener">DIU Commercial Solutions Openings</a></h2>
+  <p>Fastest non-grant route for dual-use products with commercial traction: autonomy, cyber, AI, energy, logistics, space, sensors.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>DIU says it works with US and international vendors from allied countries; each CSO has its own restrictions.</dd>
+    <dt>Setup</dt><dd>Create capability one-pagers and map product to active DIU problem statements.</dd>
+  </dl>
+  <a class="external" href="https://www.diu.mil/solutions/portfolio" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 1</span>
+    <span>Energy and hard-tech R&amp;D</span>
+  </div>
+  <h2><a href="https://science.osti.gov/sbir/Funding-Opportunities" target="_blank" rel="noopener">DOE SBIR/STTR</a></h2>
+  <p>Good for energy, climate, grid, materials, sensors, nuclear, manufacturing, AI for science and clean-tech.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>US small business route, aligned to DOE topic documents.</dd>
+    <dt>Setup</dt><dd>Track Phase I topics, letter of intent requirements and DOE registration deadlines.</dd>
+  </dl>
+  <a class="external" href="https://science.osti.gov/sbir/Funding-Opportunities" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 1</span>
+    <span>Health, medtech, biotech, digital health</span>
+  </div>
+  <h2><a href="https://seed.nih.gov/small-business-funding/find-funding/sbir-sttr-funding-opportunities" target="_blank" rel="noopener">NIH SEED / SBIR-STTR</a></h2>
+  <p>Strong route for biomedical, diagnostics, health AI, clinical workflow, therapeutics, devices and research tools.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>US small business route with NIH-specific registrations and topic fit.</dd>
+    <dt>Setup</dt><dd>Prepare Specific Aims, research strategy, commercialization plan, biosketches, facilities and human-subjects/regulatory notes.</dd>
+  </dl>
+  <a class="external" href="https://seed.nih.gov/small-business-funding/find-funding/sbir-sttr-funding-opportunities" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 1</span>
+    <span>Non-dilutive deep-tech seed funding</span>
+  </div>
+  <h2><a href="https://seedfund.nsf.gov/" target="_blank" rel="noopener">NSF America&#x27;s Seed Fund</a></h2>
+  <p>Best broad US route for early deep-tech commercial R&amp;D: AI, robotics, semiconductors, energy, medical devices, advanced manufacturing.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>US small business route. Start with Project Pitch before full proposal.</dd>
+    <dt>Setup</dt><dd>Prepare Project Pitch, technical innovation, market opportunity, team, company formation and ownership evidence.</dd>
+  </dl>
+  <a class="external" href="https://seedfund.nsf.gov/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 1</span>
+    <span>Federal SBIR/STTR gateway</span>
+  </div>
+  <h2><a href="https://www.sbir.gov/" target="_blank" rel="noopener">SBIR.gov</a></h2>
+  <p>Master search for US small-business R&amp;D grants across agencies.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Usually requires a US for-profit small business with majority US ownership/control or qualifying structure.</dd>
+    <dt>Setup</dt><dd>Create saved searches by agency and topic; track solicitations for NSF, NIH, DOE, NASA, DoD and USDA.</dd>
+  </dl>
+  <a class="external" href="https://www.sbir.gov/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>Air Force dual-use innovation</span>
+  </div>
+  <h2><a href="https://afwerx.com/" target="_blank" rel="noopener">AFWERX SBIR/STTR</a></h2>
+  <p>Good for commercial products with defense relevance and fast pilot potential.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Generally US small business route; foreign parent/ownership must be checked carefully.</dd>
+    <dt>Setup</dt><dd>Prepare defense use case, customer discovery, technical volume and transition/customer letters.</dd>
+  </dl>
+  <a class="external" href="https://afwerx.com/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>High-risk health moonshots</span>
+  </div>
+  <h2><a href="https://arpa-h.gov/" target="_blank" rel="noopener">ARPA-H</a></h2>
+  <p>Useful for ambitious health technology platforms and breakthrough biomedical systems.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Often broad performer model; eligibility depends on the specific opportunity.</dd>
+    <dt>Setup</dt><dd>Monitor open funding opportunities and build a technical thesis around ARPA-H program goals.</dd>
+  </dl>
+  <a class="external" href="https://arpa-h.gov/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>US federal prize competitions</span>
+  </div>
+  <h2><a href="https://www.challenge.gov/" target="_blank" rel="noopener">Challenge.gov</a></h2>
+  <p>Good for occasional open prizes where foreign participation may be allowed by challenge rules.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Eligibility varies by challenge; some are open globally, some require US persons/entities.</dd>
+    <dt>Setup</dt><dd>Set alerts for AI, cybersecurity, energy, health, climate, small business and data challenges.</dd>
+  </dl>
+  <a class="external" href="https://www.challenge.gov/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>Defense frontier R&amp;D</span>
+  </div>
+  <h2><a href="https://www.darpa.mil/work-with-us/for-small-businesses" target="_blank" rel="noopener">DARPA Small Business Programs</a></h2>
+  <p>Good only for very high-risk frontier technology with defense relevance.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Usually US small business or defense-contracting route; foreign ownership/control matters.</dd>
+    <dt>Setup</dt><dd>Track SBIR/STTR topics and BAAs. Prepare technical white paper and security/export-control checks.</dd>
+  </dl>
+  <a class="external" href="https://www.darpa.mil/work-with-us/for-small-businesses" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>US federal grant notice search</span>
+  </div>
+  <h2><a href="https://www.grants.gov/search-grants" target="_blank" rel="noopener">Grants.gov</a></h2>
+  <p>Useful for USAID, Department of State, DOE, USDA, NOAA and agency-specific notices.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>Eligibility varies heavily. Many notices require US registration, SAM.gov or local implementing partner.</dd>
+    <dt>Setup</dt><dd>Create saved searches for Serbia, Western Balkans, private sector, innovation, SME, AI, cybersecurity and climate.</dd>
+  </dl>
+  <a class="external" href="https://www.grants.gov/search-grants" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+<article class="route">
+  <div class="meta">
+    <span>Prioritet 2</span>
+    <span>Space, robotics, sensors, autonomy, materials</span>
+  </div>
+  <h2><a href="https://sbir.nasa.gov/" target="_blank" rel="noopener">NASA SBIR/STTR</a></h2>
+  <p>Relevant if tech supports space systems, aerospace, robotics, autonomy, climate observation or advanced materials.</p>
+  <dl>
+    <dt>Eligibility</dt><dd>US small business route with NASA topic alignment.</dd>
+    <dt>Setup</dt><dd>Track NASA solicitations and prepare topic-specific technical proposal and commercialization plan.</dd>
+  </dl>
+  <a class="external" href="https://sbir.nasa.gov/" target="_blank" rel="noopener">Otvori rutu</a>
+</article>
+  </main>
+</body>
+</html>

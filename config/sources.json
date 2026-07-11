@@ -128,6 +128,159 @@
       "enabled": true
     },
     {
+      "name": "EIT Jumpstarter",
+      "level": "EIT pre-acceleration / RIS and Malta route",
+      "type": "web",
+      "url": "https://eitjumpstarter.eu/",
+      "required_link_terms": ["jumpstarter", "funding", "startup", "malta", "serbia", "slovenia"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT 28DIGITAL Co-Creation Accelerator",
+      "level": "EIT digital startup grant / industry co-creation",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/co-creation-accelerator-2026-2027",
+      "required_link_terms": ["28digital", "co-creation", "startup", "financial support", "sme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Health Innovation Uptake",
+      "level": "EIT Health digital health commercialisation",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/innovation-uptake-call",
+      "required_link_terms": ["innovation uptake", "digital health", "sme", "funding", "consortium"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Health Transformative Healthcare Instrument",
+      "level": "EIT Health startup growth funding",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/transformative-healthcare-instrument-2026",
+      "required_link_terms": ["transformative healthcare", "startup", "funding", "sme", "co-funding"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Urban Mobility Financial Support to Startups",
+      "level": "EIT Urban Mobility startup finance",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/financial-support-startups-open-call-2026",
+      "required_link_terms": ["financial support", "startups", "mobility", "funding", "horizon europe"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "NEB Academy Fashion Shift",
+      "level": "EIT creative and New European Bauhaus grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/neb-academy-fashion-shift",
+      "required_link_terms": ["neb academy", "fashion", "funding", "circular", "grant"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "NEB Academy Skills Infrastructure",
+      "level": "EIT creative, skills and New European Bauhaus grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/neb-academy-skills-infrastructure",
+      "required_link_terms": ["neb academy", "skills", "learning", "funding", "microcredentials"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Urban Mobility RIS Education",
+      "level": "EIT mobility RIS education and training grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/ris-education-open-call-2027",
+      "required_link_terms": ["ris education", "training", "urban mobility", "sme", "grant"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Health Micro-Credentials",
+      "level": "EIT Health education and micro-credentials grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/entrepreneurship-innovation-micro-credentials-call",
+      "required_link_terms": ["micro-credentials", "health", "entrepreneurship", "innovation", "funding"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Health Biotech Innovation Path",
+      "level": "EIT Health biotech education grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/biotech-innovation-path-call",
+      "required_link_terms": ["biotech", "innovation path", "education", "funding", "ris"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Urban Mobility Explained UMX",
+      "level": "EIT mobility education and training grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/urban-mobility-explained-umx-open-call-0",
+      "required_link_terms": ["urban mobility explained", "umx", "training", "funding", "sme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT RawMaterials KAVA Upscaling",
+      "level": "EIT raw and advanced materials consortium grant",
+      "type": "web",
+      "url": "https://www.eit.europa.eu/our-activities/opportunities/kic-added-value-activity-kava-call-14-upscaling",
+      "required_link_terms": ["kava", "rawmaterials", "upscaling", "co-funding", "seedbook"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Digital Open Innovation Factory",
+      "level": "EU-backed digital startup programme",
+      "type": "web",
+      "url": "https://www.eitdigital.eu/open-innovation-factory/",
+      "required_link_terms": ["scaleup", "startup", "digital", "open innovation", "apply"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT Manufacturing Calls",
+      "level": "EU-backed manufacturing innovation",
+      "type": "web",
+      "url": "https://www.eitmanufacturing.eu/calls/",
+      "required_link_terms": ["call", "startup", "sme", "manufacturing", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT Urban Mobility Open Calls",
+      "level": "EU-backed mobility innovation",
+      "type": "web",
+      "url": "https://www.eiturbanmobility.eu/open-calls/",
+      "required_link_terms": ["open call", "startup", "sme", "mobility", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT RawMaterials Opportunities",
+      "level": "EU-backed raw materials innovation",
+      "type": "web",
+      "url": "https://eitrawmaterials.eu/call-for-startups/",
+      "required_link_terms": ["startup", "accelerator", "raw materials", "funding", "apply"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT Climate-KIC Opportunities",
+      "level": "EU-backed climate innovation",
+      "type": "web",
+      "url": "https://www.climate-kic.org/opportunities/",
+      "required_link_terms": ["opportunity", "startup", "climate", "innovation", "call"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
       "name": "EuroAccess Funding Search",
       "level": "EU funding search / Interreg",
       "type": "web",
@@ -137,11 +290,596 @@
       "enabled": true
     },
     {
+      "name": "European Cluster Collaboration Platform Open Calls",
+      "level": "EU Euroclusters / SME cascade funding",
+      "type": "web",
+      "url": "https://clustercollaboration.eu/open-calls",
+      "required_link_terms": ["euroclusters", "open call", "sme", "voucher", "grant"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Cluster Submission Platform",
+      "level": "EU Euroclusters / SME application platform",
+      "type": "web",
+      "url": "https://clustersubmissionplatform.eu/",
+      "required_link_terms": ["open call", "euroclusters", "sme", "voucher", "submit"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Eureka Open Calls",
+      "level": "European and global SME R&D",
+      "type": "web",
+      "url": "https://www.eurekanetwork.org/open-calls/",
+      "required_link_terms": ["eurostars", "globalstars", "network projects", "sme", "deadline"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Eureka Innowwide",
+      "level": "European SME market feasibility grants",
+      "type": "web",
+      "url": "https://www.eurekanetwork.org/programmes-and-calls/innowwide/",
+      "required_link_terms": ["innowwide", "sme", "market feasibility", "grant", "call"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "LIFE Programme Calls",
+      "level": "EU climate and environment grants",
+      "type": "web",
+      "url": "https://cinea.ec.europa.eu/programmes/life/life-calls-proposals_en",
+      "required_link_terms": ["life", "call for proposals", "climate", "environment", "circular"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "CINEA Innovation Fund",
+      "level": "EU climate-tech scale-up funding",
+      "type": "web",
+      "url": "https://cinea.ec.europa.eu/programmes/innovation-fund_en",
+      "required_link_terms": ["innovation fund", "clean tech", "call", "decarbonisation", "grant"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Digital Europe Programme Funding",
+      "level": "EU digital deployment grants",
+      "type": "web",
+      "url": "https://digital-strategy.ec.europa.eu/en/funding",
+      "required_link_terms": ["digital europe", "call", "ai", "data", "cybersecurity"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "HaDEA EU4Health Calls",
+      "level": "EU health grants",
+      "type": "web",
+      "url": "https://hadea.ec.europa.eu/calls-proposals_en",
+      "required_link_terms": ["eu4health", "call for proposals", "health", "digital", "grant"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Circular Bio-based Europe JU Calls",
+      "level": "EU bio-based industry R&D",
+      "type": "web",
+      "url": "https://www.cbe.europa.eu/open-calls-proposals",
+      "required_link_terms": ["call for proposals", "bio-based", "circular", "industry", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Clean Hydrogen Partnership Calls",
+      "level": "EU hydrogen R&D and deployment",
+      "type": "web",
+      "url": "https://www.clean-hydrogen.europa.eu/get-involved/calls-proposals_en",
+      "required_link_terms": ["call for proposals", "hydrogen", "innovation", "sme", "deadline"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Innovative Health Initiative Calls",
+      "level": "EU health public-private R&D",
+      "type": "web",
+      "url": "https://www.ihi.europa.eu/apply-funding/future-opportunities",
+      "required_link_terms": ["call", "health", "innovation", "sme", "industry"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Chips JU Calls",
+      "level": "EU semiconductors and deep tech",
+      "type": "web",
+      "url": "https://www.chips-ju.europa.eu/Calls/",
+      "required_link_terms": ["call", "chips", "semiconductor", "pilot line", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EuroHPC JU Calls",
+      "level": "EU high-performance computing and AI",
+      "type": "web",
+      "url": "https://eurohpc-ju.europa.eu/access-our-supercomputers/calls_en",
+      "required_link_terms": ["call", "hpc", "ai", "supercomputing", "access"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "European Defence Fund Calls",
+      "level": "EU defence R&D consortium route",
+      "type": "web",
+      "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/european-defence-fund-edf_en",
+      "required_link_terms": ["european defence fund", "call", "sme", "defence", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "CEF Digital Calls",
+      "level": "EU digital infrastructure funding",
+      "type": "web",
+      "url": "https://hadea.ec.europa.eu/programmes/connecting-europe-facility/cef-digital_en",
+      "required_link_terms": ["cef digital", "call", "5g", "cloud", "digital infrastructure"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EUSPA Funding Opportunities",
+      "level": "EU space downstream innovation",
+      "type": "web",
+      "url": "https://www.euspa.europa.eu/opportunities/funding",
+      "required_link_terms": ["funding", "gnss", "copernicus", "space", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EUIPO SME Fund",
+      "level": "EU SME IP voucher",
+      "type": "web",
+      "url": "https://www.euipo.europa.eu/en/sme-corner/sme-fund",
+      "required_link_terms": ["sme fund", "voucher", "trade marks", "designs", "patents"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "CASSINI Business Accelerator",
+      "level": "EU space startup accelerator",
+      "type": "web",
+      "url": "https://www.cassini.eu/accelerator/",
+      "required_link_terms": ["cassini", "space startup", "accelerator", "voucher", "applications"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "CASSINI Hackathons and Challenges",
+      "level": "EU space entrepreneurship competitions",
+      "type": "web",
+      "url": "https://www.cassini.eu/hackathons/",
+      "required_link_terms": ["cassini", "hackathon", "challenge", "space", "startup"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "ESA Business Applications",
+      "level": "European space-enabled business funding",
+      "type": "web",
+      "url": "https://business.esa.int/funding",
+      "required_link_terms": ["funding", "business applications", "space", "kick-start", "demonstration"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "European Digital Innovation Hubs Network",
+      "level": "EU digital transformation services for SMEs",
+      "type": "web",
+      "url": "https://european-digital-innovation-hubs.ec.europa.eu/home",
+      "required_link_terms": ["edih", "sme", "digital transformation", "test before invest", "services"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "AI-on-Demand Platform",
+      "level": "EU AI ecosystem and open calls monitoring",
+      "type": "web",
+      "url": "https://aiod.eu/",
+      "required_link_terms": ["open call", "ai", "sme", "funding", "experiments"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EuroHPC AI Factories",
+      "level": "EU AI compute and testing infrastructure",
+      "type": "web",
+      "url": "https://eurohpc-ju.europa.eu/ai-factories_en",
+      "required_link_terms": ["ai factories", "sme", "startup", "access", "ai"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "I3 Instrument",
+      "level": "EU interregional innovation investments",
+      "type": "web",
+      "url": "https://eismea.ec.europa.eu/programmes/interregional-innovation-investments-i3-instrument_en",
+      "required_link_terms": ["interregional innovation investments", "i3", "sme", "call", "investment"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Single Market Programme Calls",
+      "level": "EU SME competitiveness and single market",
+      "type": "web",
+      "url": "https://eismea.ec.europa.eu/programmes/single-market-programme_en",
+      "required_link_terms": ["single market programme", "sme", "call", "enterprise", "competitiveness"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Innovation Radar",
+      "level": "EU innovation visibility and investor route",
+      "type": "web",
+      "url": "https://innovation-radar.ec.europa.eu/",
+      "required_link_terms": ["innovation radar", "startup", "sme", "investor", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Startup Europe",
+      "level": "EU startup ecosystem route",
+      "type": "web",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/startup-europe",
+      "required_link_terms": ["startup europe", "startup", "scaleup", "sme", "ecosystem"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Testing and Experimentation Facilities for AI",
+      "level": "EU AI testing infrastructure",
+      "type": "web",
+      "url": "https://digital-strategy.ec.europa.eu/en/activities/testing-and-experimentation-facilities",
+      "required_link_terms": ["testing", "experimentation", "ai", "sme", "tef"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT Culture & Creativity Opportunities",
+      "level": "EU-backed creative and cultural innovation",
+      "type": "web",
+      "url": "https://eit-culture-creativity.eu/opportunities/",
+      "required_link_terms": ["opportunity", "startup", "culture", "creative", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EIT InnoEnergy",
+      "level": "EU-backed sustainable energy innovation",
+      "type": "web",
+      "url": "https://www.innoenergy.com/for-start-ups/",
+      "required_link_terms": ["startup", "sustainable energy", "investment", "innovation", "accelerator"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "BlueInvest",
+      "level": "EU blue economy investment readiness",
+      "type": "web",
+      "url": "https://blue-invest.eu/",
+      "required_link_terms": ["blue economy", "startup", "sme", "investment", "business"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EMFAF Blue Economy Calls",
+      "level": "EU maritime and blue economy grants",
+      "type": "web",
+      "url": "https://cinea.ec.europa.eu/programmes/european-maritime-fisheries-and-aquaculture-fund_en",
+      "required_link_terms": ["emfaf", "blue economy", "call", "maritime", "aquaculture"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Creative Europe Calls",
+      "level": "EU creative and media sector grants",
+      "type": "web",
+      "url": "https://culture.ec.europa.eu/creative-europe/calls",
+      "required_link_terms": ["creative europe", "call", "media", "innovation", "digital"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "New European Bauhaus Opportunities",
+      "level": "EU design, sustainability and built environment",
+      "type": "web",
+      "url": "https://new-european-bauhaus.europa.eu/get-involved/funding-opportunities_en",
+      "required_link_terms": ["new european bauhaus", "funding", "call", "innovation", "sustainability"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Erasmus for Young Entrepreneurs",
+      "level": "EU entrepreneur exchange and market learning",
+      "type": "web",
+      "url": "https://www.erasmus-entrepreneurs.eu/",
+      "required_link_terms": ["entrepreneurs", "exchange", "sme", "new entrepreneur", "host entrepreneur"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "CELTIC-NEXT Eureka Cluster",
+      "level": "Eureka ICT cluster / European R&D",
+      "type": "web",
+      "url": "https://www.celticnext.eu/call-information/",
+      "required_link_terms": ["call", "eureka", "ict", "sme", "consortium"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "ITEA Eureka Cluster",
+      "level": "Eureka software-intensive systems R&D",
+      "type": "web",
+      "url": "https://www.itea4.org/call.html",
+      "required_link_terms": ["call", "software", "eureka", "sme", "project outline"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Xecs Eureka Cluster",
+      "level": "Eureka electronic components and systems",
+      "type": "web",
+      "url": "https://eureka-xecs.com/call/",
+      "required_link_terms": ["call", "electronic components", "systems", "eureka", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Eurogia Eureka Cluster",
+      "level": "Eureka low-carbon energy technologies",
+      "type": "web",
+      "url": "https://eurogia.eu/calls/",
+      "required_link_terms": ["call", "low carbon", "energy", "eureka", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Interreg Europe Calls",
+      "level": "European territorial cooperation",
+      "type": "web",
+      "url": "https://www.interregeurope.eu/apply-for-funding",
+      "required_link_terms": ["call", "funding", "sme", "innovation", "policy"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "PRIMA Calls",
+      "level": "Euro-Mediterranean agriculture, food and water R&I",
+      "type": "web",
+      "url": "https://prima-med.org/calls-for-proposals/",
+      "required_link_terms": ["call", "water", "agriculture", "food", "mediterranean"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Water4All Joint Transnational Calls",
+      "level": "European water R&I partnership",
+      "type": "web",
+      "url": "https://www.water4all-partnership.eu/joint-transnational-calls",
+      "required_link_terms": ["joint transnational call", "water", "innovation", "sme", "funding"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Biodiversa Plus Open Calls",
+      "level": "European biodiversity R&I partnership",
+      "type": "web",
+      "url": "https://www.biodiversa.eu/research-funding/open-calls/",
+      "required_link_terms": ["open call", "biodiversity", "nature", "innovation", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Driving Urban Transitions Calls",
+      "level": "European urban transition R&I",
+      "type": "web",
+      "url": "https://dutpartnership.eu/dut-call/",
+      "required_link_terms": ["dut call", "urban", "mobility", "energy", "circular"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Clean Aviation Calls",
+      "level": "EU aviation R&D consortium route",
+      "type": "web",
+      "url": "https://www.clean-aviation.eu/calls",
+      "required_link_terms": ["call", "aviation", "clean", "hydrogen", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "SESAR Calls",
+      "level": "EU aviation and air traffic management R&D",
+      "type": "web",
+      "url": "https://www.sesarju.eu/open-calls",
+      "required_link_terms": ["open calls", "aviation", "air traffic", "digital", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Europe's Rail Calls",
+      "level": "EU rail R&D consortium route",
+      "type": "web",
+      "url": "https://rail-research.europa.eu/open-calls/",
+      "required_link_terms": ["open calls", "rail", "digital", "innovation", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EP PerMed Funding",
+      "level": "European personalised medicine partnership",
+      "type": "web",
+      "url": "https://www.eppermed.eu/funding/",
+      "required_link_terms": ["funding", "personalised medicine", "call", "health", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Clean Energy Transition Partnership Calls",
+      "level": "European clean energy transnational calls",
+      "type": "web",
+      "url": "https://cetpartnership.eu/calls",
+      "required_link_terms": ["call", "clean energy", "transition", "joint call", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "M-ERA.NET Calls",
+      "level": "European materials and battery R&I",
+      "type": "web",
+      "url": "https://www.m-era.net/joint-calls",
+      "required_link_terms": ["joint call", "materials", "battery", "innovation", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "QuantERA Calls",
+      "level": "European quantum technologies R&I",
+      "type": "web",
+      "url": "https://quantera.eu/calls-for-proposals/",
+      "required_link_terms": ["quantum", "call for proposals", "innovation", "sme", "research"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "CHIST-ERA Calls",
+      "level": "European ICT and emerging technologies R&I",
+      "type": "web",
+      "url": "https://www.chistera.eu/call-announcement",
+      "required_link_terms": ["call", "ict", "emerging technologies", "research", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "COST Open Call",
+      "level": "European networking and research cooperation",
+      "type": "web",
+      "url": "https://www.cost.eu/funding/how-to-get-funding/open-call-a-simple-one-step-application-process/",
+      "required_link_terms": ["open call", "network", "cost action", "sme", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "European Cybersecurity Competence Centre Funding",
+      "level": "EU cybersecurity funding",
+      "type": "web",
+      "url": "https://cybersecurity-centre.europa.eu/funding-opportunities_en",
+      "required_link_terms": ["funding", "cybersecurity", "call", "digital europe", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "European Urban Initiative Calls",
+      "level": "EU urban innovation partner route",
+      "type": "web",
+      "url": "https://www.urban-initiative.eu/calls-proposals",
+      "required_link_terms": ["call for proposals", "urban", "innovation", "city", "sme"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "URBACT Calls",
+      "level": "EU city network partner route",
+      "type": "web",
+      "url": "https://urbact.eu/get-involved",
+      "required_link_terms": ["call", "network", "city", "innovation", "partner"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EEA and Norway Grants Available Funding",
+      "level": "European bilateral grants monitoring",
+      "type": "web",
+      "url": "https://www.eeagrants.org/currently-available-funding",
+      "required_link_terms": ["funding", "call", "business", "innovation", "green"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "InvestEU Portal",
+      "level": "EU finance and investment route",
+      "type": "web",
+      "url": "https://investeu.europa.eu/investment-opportunities/investeu-portal_en",
+      "required_link_terms": ["investment", "sme", "startup", "project", "financing"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIF for SMEs",
+      "level": "EU finance / funds and guarantees",
+      "type": "web",
+      "url": "https://www.eif.org/what_we_do/index.htm",
+      "required_link_terms": ["sme", "venture capital", "guarantee", "innovation", "fund"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIB Venture Debt",
+      "level": "EU scale-up finance",
+      "type": "web",
+      "url": "https://www.eib.org/en/products/equity/venture-debt/index",
+      "required_link_terms": ["venture debt", "innovation", "scale-up", "financing", "growth"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EBRD Star Venture",
+      "level": "European development bank startup support",
+      "type": "web",
+      "url": "https://www.ebrd.com/starventure",
+      "required_link_terms": ["startup", "venture", "innovation", "western balkans", "support"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EBRD Advice for Small Businesses",
+      "level": "European development bank SME support",
+      "type": "web",
+      "url": "https://www.ebrd.com/work-with-us/advice-for-small-businesses.html",
+      "required_link_terms": ["small businesses", "advice", "grant", "consulting", "sme"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "NATO DIANA Challenges",
+      "level": "European / transatlantic dual-use accelerator",
+      "type": "web",
+      "url": "https://www.diana.nato.int/challenges.html",
+      "required_link_terms": ["challenge", "accelerator", "dual-use", "startup", "grant"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
       "name": "EU Delegation to Serbia",
       "level": "EU in Serbia",
       "type": "web",
       "url": "https://www.eeas.europa.eu/delegations/serbia_en",
       "detail_fetch_limit": 12,
+      "enabled": true
+    },
+    {
+      "name": "EU Delegation Serbia Open Calls",
+      "level": "EU in Serbia / NGO and public communication calls",
+      "type": "web",
+      "url": "https://europa.rs/otvoreni-pozivi/",
+      "required_link_terms": ["poziv", "eu values", "serbia", "service contract", "civil society"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EU Mogucnosti Serbia",
+      "level": "Serbia EU opportunities aggregator",
+      "type": "web",
+      "url": "https://eumogucnosti.rs/",
+      "required_link_terms": ["poziv", "msp", "biznis", "inovacije", "srbija"],
+      "detail_fetch_limit": 25,
       "enabled": true
     },
     {
@@ -158,6 +896,24 @@
       "type": "web",
       "url": "https://www.inovacionifond.rs/cir/konkursi/",
       "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Innovation Fund Serbia Catalytic AI",
+      "level": "Serbia national / SAIGE AI startup co-investment",
+      "type": "web",
+      "url": "https://www.inovacionifond.rs/cir/info/ai-startapi-u-fokusu",
+      "required_link_terms": ["ai", "startapi", "katalitik", "investment", "grant"],
+      "detail_fetch_limit": 12,
+      "enabled": true
+    },
+    {
+      "name": "UNDP Serbia Circular Solutions",
+      "level": "Serbia circular economy local grants",
+      "type": "web",
+      "url": "https://eumogucnosti.rs/svi-dogadjaji/imate-ideju-za-cirkularnu-ekonomiju-saznajte-kako-da-konkurisete-za-finansijsku-podrsku/",
+      "required_link_terms": ["circular", "cirkular", "undp", "gef", "grant"],
+      "detail_fetch_limit": 12,
       "enabled": true
     },
     {
@@ -264,6 +1020,33 @@
       "url": "https://opencalls.fund/",
       "required_link_terms": ["active calls", "open call", "deadline"],
       "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "OpenCalls FS4Africa OC2",
+      "level": "EU agrifood FSTP / innovation hubs",
+      "type": "web",
+      "url": "https://opencalls.fund/open-call/fs4africa-oc-2",
+      "required_link_terms": ["fs4africa", "food", "innovation hubs", "training", "open call"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "OpenCalls LIGAWINE",
+      "level": "EU wine sector FSTP / agrifood digital innovation",
+      "type": "web",
+      "url": "https://opencalls.fund/open-call/ligawine",
+      "required_link_terms": ["ligawine", "wine", "winery", "viticulture", "open call"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "OpenCalls OFELIA",
+      "level": "EU functional foods FSTP / upcoming SME call",
+      "type": "web",
+      "url": "https://opencalls.fund/open-call/ofelia",
+      "required_link_terms": ["ofelia", "functional foods", "medicinal", "sme", "open call"],
+      "detail_fetch_limit": 15,
       "enabled": true
     },
     {
@@ -470,6 +1253,393 @@
       "type": "web",
       "url": "https://si.se/en/apply/funding-grants/",
       "required_link_terms": ["funding", "grant", "call", "cooperation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "UKRI Funding Finder",
+      "level": "UK state / research and innovation monitoring",
+      "type": "web",
+      "url": "https://www.ukri.org/opportunity/",
+      "required_link_terms": ["sme", "business", "innovation", "international", "grant"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "Innovate UK Competition Search",
+      "level": "UK state / business innovation funding",
+      "type": "web",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/search",
+      "required_link_terms": ["sme", "business", "international", "grant", "competition"],
+      "detail_fetch_limit": 25,
+      "enabled": true
+    },
+    {
+      "name": "ARIA Funding Opportunities",
+      "level": "UK ARPA-style frontier R&D",
+      "type": "web",
+      "url": "https://aria.org.uk/funding-opportunities",
+      "required_link_terms": ["opportunity seeds", "startup", "company", "funding", "deadline"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "NSF America's Seed Fund",
+      "level": "USA state / US company route",
+      "type": "web",
+      "url": "https://seedfund.nsf.gov/",
+      "required_link_terms": ["startup", "small business", "sbir", "sttr", "deadline"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "SBIR.gov Funding Search",
+      "level": "USA federal SBIR/STTR gateway",
+      "type": "web",
+      "url": "https://www.sbir.gov/",
+      "required_link_terms": ["sbir", "sttr", "small business", "solicitation", "funding"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "NIH SEED SBIR-STTR",
+      "level": "USA health / US company route",
+      "type": "web",
+      "url": "https://seed.nih.gov/small-business-funding/find-funding/sbir-sttr-funding-opportunities",
+      "required_link_terms": ["sbir", "sttr", "small business", "funding opportunity", "nih"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "DOE SBIR-STTR",
+      "level": "USA energy / US company route",
+      "type": "web",
+      "url": "https://science.osti.gov/sbir/Funding-Opportunities",
+      "required_link_terms": ["sbir", "sttr", "phase i", "topics", "funding opportunity"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "NASA SBIR-STTR",
+      "level": "USA space / US company route",
+      "type": "web",
+      "url": "https://sbir.nasa.gov/",
+      "required_link_terms": ["sbir", "sttr", "solicitation", "small business", "nasa"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "ARPA-H Funding Opportunities",
+      "level": "USA health frontier R&D",
+      "type": "web",
+      "url": "https://arpa-h.gov/",
+      "required_link_terms": ["funding opportunity", "baa", "health", "proposer", "solicitation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "DARPA Small Business Programs",
+      "level": "USA defense frontier R&D",
+      "type": "web",
+      "url": "https://www.darpa.mil/work-with-us/for-small-businesses",
+      "required_link_terms": ["sbir", "sttr", "small business", "solicitation", "baa"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Defense Innovation Unit",
+      "level": "USA defense commercial solutions",
+      "type": "web",
+      "url": "https://www.diu.mil/solutions/portfolio",
+      "required_link_terms": ["commercial solutions opening", "prototype", "solicitation", "vendor", "dual-use"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "AFWERX",
+      "level": "USA Air Force dual-use innovation",
+      "type": "web",
+      "url": "https://afwerx.com/",
+      "required_link_terms": ["sbir", "sttr", "open topic", "dual-use", "small business"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Grants.gov",
+      "level": "USA federal grants monitoring",
+      "type": "web",
+      "url": "https://www.grants.gov/search-grants",
+      "required_link_terms": ["serbia", "western balkans", "innovation", "sme", "private sector"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "USA.gov Federal Innovation Challenges",
+      "level": "USA federal prize challenge monitoring",
+      "type": "web",
+      "url": "https://www.usa.gov/innovation",
+      "required_link_terms": ["challenge", "prize", "innovation", "competition", "small business"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Canada Strategic Response Fund",
+      "level": "Canada state / Canadian entity route",
+      "type": "web",
+      "url": "https://ised-isde.canada.ca/site/ised/en/programs-and-initiatives/strategic-response-fund",
+      "required_link_terms": ["innovation", "business", "r&d", "ai", "advanced technologies"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Innovation Canada Funding Search",
+      "level": "Canada state / funding search monitoring",
+      "type": "web",
+      "url": "https://innovation.ised-isde.canada.ca/s/?language=en_CA",
+      "required_link_terms": ["funding", "grant", "loan", "business", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "NRC IRAP Canada",
+      "level": "Canada state / Canadian SME route",
+      "type": "web",
+      "url": "https://nrc.canada.ca/en/support-technology-innovation/financial-support-technology-innovation-through-nrc-irap",
+      "required_link_terms": ["small and medium", "technology", "innovation", "financial support", "international"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "CanExport SMEs",
+      "level": "Canada export support / Canadian SME route",
+      "type": "web",
+      "url": "https://www.tradecommissioner.gc.ca/funding-financement/canexport/sme-pme/index.aspx",
+      "required_link_terms": ["sme", "funding", "export", "international markets", "canexport"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Hong Kong Innovation and Technology Fund",
+      "level": "China / Hong Kong entity route",
+      "type": "web",
+      "url": "https://www.itf.gov.hk/en/funding-programmes/index.html",
+      "required_link_terms": ["technology voucher", "enterprise", "startup", "funding", "innovation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "HKSTP Startup Support",
+      "level": "China / Hong Kong startup route",
+      "type": "web",
+      "url": "https://www.hkstp.org/what-we-offer/startup-support/",
+      "required_link_terms": ["startup", "incubation", "funding", "technology", "ideation"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "InvestHK Funding Schemes",
+      "level": "China / Hong Kong market-entry route",
+      "type": "web",
+      "url": "https://www.investhk.gov.hk/en/setting-up-business/hong-kong-funding-schemes/",
+      "required_link_terms": ["funding", "technology", "startup", "sme", "hong kong"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EU Resource Centre Serbia",
+      "level": "Serbia NGO / EU civil society support",
+      "type": "web",
+      "url": "https://euresurscentar.bos.rs/",
+      "required_link_terms": ["konkurs", "grant", "civilno drustvo", "organizacije", "podrska"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "EU TACSO",
+      "level": "Western Balkans civil society support",
+      "type": "web",
+      "url": "https://tacso.eu/",
+      "required_link_terms": ["civil society", "call", "grant", "serbia", "western balkans"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "CERV Programme Calls",
+      "level": "EU civil society / rights and values",
+      "type": "web",
+      "url": "https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes/citizens-equality-rights-and-values-programme_en",
+      "required_link_terms": ["cerv", "civil society", "call", "rights", "values"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Erasmus+ Calls",
+      "level": "EU education, youth and digital skills",
+      "type": "web",
+      "url": "https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-organisations",
+      "required_link_terms": ["erasmus", "organisations", "digital skills", "youth", "call"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Europe House Serbia",
+      "level": "EU in Serbia / civil society and events",
+      "type": "web",
+      "url": "https://euhouse.rs/",
+      "required_link_terms": ["konkurs", "poziv", "civilno drustvo", "digital", "mladi"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "UNDP Serbia",
+      "level": "UN / Serbia digital and development calls",
+      "type": "web",
+      "url": "https://www.undp.org/serbia/procurement",
+      "required_link_terms": ["call", "rfp", "digital", "innovation", "civil society"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "USAID Serbia",
+      "level": "USA donor / Serbia civil society and digital support",
+      "type": "web",
+      "url": "https://www.usaid.gov/serbia",
+      "required_link_terms": ["grant", "civil society", "digital", "democracy", "serbia"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "U.S. Embassy Serbia Grants",
+      "level": "USA donor / Serbia NGO grants",
+      "type": "web",
+      "url": "https://rs.usembassy.gov/education-culture/grants-programs/",
+      "required_link_terms": ["grants", "ngo", "civil society", "digital", "media"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Balkan Trust for Democracy",
+      "level": "Western Balkans civil society grants",
+      "type": "web",
+      "url": "https://www.gmfus.org/balkan-trust-democracy",
+      "required_link_terms": ["grant", "civil society", "democracy", "western balkans", "serbia"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "International Visegrad Fund",
+      "level": "European regional NGO and cooperation grants",
+      "type": "web",
+      "url": "https://www.visegradfund.org/apply/grants/",
+      "required_link_terms": ["grants", "civil society", "innovation", "digital", "western balkans"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "National Endowment for Democracy",
+      "level": "USA democracy and civil society grants",
+      "type": "web",
+      "url": "https://www.ned.org/apply-for-grant/",
+      "required_link_terms": ["grant", "civil society", "democracy", "digital", "media"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "TechSoup Global",
+      "level": "NGO technology donations and discounts",
+      "type": "web",
+      "url": "https://www.techsoup.org/",
+      "required_link_terms": ["nonprofit", "technology", "software", "donation", "ngo"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Horizon Europe Missions",
+      "level": "EU mission-oriented R&I",
+      "type": "web",
+      "url": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe_en",
+      "required_link_terms": ["missions", "climate", "cancer", "cities", "ocean", "soil", "horizon"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Common European Data Spaces",
+      "level": "EU Digital Europe / data economy",
+      "type": "web",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/data-spaces",
+      "required_link_terms": ["data spaces", "digital europe", "data", "interoperability", "ai", "cybersecurity"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "European Social Fund Plus",
+      "level": "EU skills, inclusion and employment",
+      "type": "web",
+      "url": "https://european-social-fund-plus.ec.europa.eu/en",
+      "required_link_terms": ["skills", "inclusion", "employment", "digital", "training", "calls"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "European DIGITAL SME Alliance",
+      "level": "EU ICT SME ecosystem and policy radar",
+      "type": "web",
+      "url": "https://www.digitalsme.eu/",
+      "required_link_terms": ["sme", "digital", "ict", "cybersecurity", "ai", "calls"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "EIT Global Outreach The DeepTechers",
+      "level": "EIT deep-tech ecosystem programme",
+      "type": "web",
+      "url": "https://www.go-eit.eu/the-deeptechers/",
+      "required_link_terms": ["deeptechers", "deep tech", "scholarship", "horizon europe", "apply"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "Israel Innovation Authority",
+      "level": "Israel innovation grants and Horizon partner route",
+      "type": "web",
+      "url": "https://innovationisrael.org.il/en/programs/",
+      "required_link_terms": ["program", "grant", "horizon", "startup", "pilot"],
+      "detail_fetch_limit": 20,
+      "enabled": true
+    },
+    {
+      "name": "Innovation Centre Denmark",
+      "level": "Denmark innovation matchmaking and funding intelligence",
+      "type": "web",
+      "url": "https://icdk.dk/what-we-offer",
+      "required_link_terms": ["funding", "matchmaking", "startup", "research", "innovation"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "AWS Activate",
+      "level": "Global startup cloud credits",
+      "type": "web",
+      "url": "https://aws.amazon.com/startups/credits/",
+      "required_link_terms": ["activate", "credits", "startup", "ai", "apply"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "BioInnovation Institute",
+      "level": "Denmark life science and deep-tech venture funding",
+      "type": "web",
+      "url": "https://bii.dk/programs/",
+      "required_link_terms": ["venture lab", "bio studio", "quantum", "funding", "startup"],
+      "detail_fetch_limit": 15,
+      "enabled": true
+    },
+    {
+      "name": "DTU Skylab",
+      "level": "Denmark university innovation and startup programme",
+      "type": "web",
+      "url": "https://www.skylab.dtu.dk/",
+      "required_link_terms": ["startup", "programme", "funding", "facilities", "innovation"],
       "detail_fetch_limit": 15,
       "enabled": true
     },

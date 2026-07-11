@@ -31,6 +31,8 @@ Svaki poziv na web stranici ima `Apply` sekciju. Kada je otvoris, prikazuje se s
 
 Glavni izvestaj ima link `Alert izvori`, koji otvara stranicu sa newsletterima, hubovima i portalima koje treba pratiti za EU, kaskadna, cross-border i nacionalna SME finansiranja za Srbiju, Maltu i Sloveniju.
 
+Dodali smo i `USA plan`, posebnu stranicu za pripremu US entiteta, SBIR/STTR, NSF, NIH, DOE, NASA, DIU, DARPA, ARPA-H, Challenge.gov i Grants.gov rute.
+
 Brz tekstualni pregled:
 
 ```powershell
@@ -43,6 +45,7 @@ dotnet run --project .\src\EuCallTracker -- list --open-only --min-score 4
 - `data/calls.json` - lokalna baza nadjenih poziva
 - `reports/open-calls.html` - HTML izvestaj
 - `reports/alert-sources.html` - stranica sa newsletterima, hubovima i alert servisima
+- `reports/usa-readiness.html` - USA readiness mapa za grantove, SBIR/STTR i federalne programe
 - `reports/open-calls.csv` - CSV izvestaj za Excel
 - `src/EuCallTracker` - C# / ASP.NET Core aplikacija
 
